@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #4B0082;
+}
+
+.container-logotipo {
+    text-align: center;
+}
+
+.titulo-cadastro {
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+.section-cadastro {
+    background-color: #D9D9D9;
+    width: 25vw;
+    height: auto;
+    border-radius: 20px;
+    margin: 0 auto;
+    /* Margens automáticas para centralizar */
+    padding: 10px;
+    /* Reduzido o padding para manter a proporção */
+}
+
+/* Estilos para o contêiner do input */
+    .input-container {
+        position: relative;
+        margin-bottom: 20px;
+        /* Espaçamento inferior para a linha embaixo */
+    }
+
+    /* Estilo básico para o input */
+    .purple-input {
+        width: 90%;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid purple;
+        /* Linha embaixo */
+        outline: none;
+        font-size: 16px;
+        color: #4B0082;
+        background-color: transparent;
+        /* Remover o fundo branco */
+    }
+
+    /* Estilo do placeholder */
+    .purple-input::placeholder {
+        color: #4B0082;
+        /* Cor do texto do placeholder */
+        opacity: 1.0;
+        /* Opacidade do texto do placeholder */
+    }
+
+    /* Efeito ao focar no input */
+    .purple-input:focus {
+        border-bottom: 2px solid #4B0082;
+        /* Mudança de cor da linha embaixo ao focar */
+    }
+
+    .txt-informacoes-pessoais {
+        font-family: "Roboto", sans-serif;
+        color: #4B0082;
+        text-align: center;
+    }
+
+    .txt-contato {
+        font-family: "Roboto", sans-serif;
+        color: #4B0082;
+        text-align: center;
+    }
+
+    .btn-cadastrar {
+        font-family: "Roboto", sans-serif;
+        background-color: red;
+        color: #ffffff;
+        border: none;
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .btn-voltar {
+        font-family: "Roboto", sans-serif;
+        background-color: #008000;
+        margin-top: 20px;
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .container-buttons {
+        text-align: center;
+        margin-top: 30px;
+        padding: 20px;
+    }

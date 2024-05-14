@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #4B0082;
+}
+
+.container-logotipo, .container-button, .container-links {
+    text-align: center;
+}
+
+.titulo-login {
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.section-login {
+    background-color: #D9D9D9;
+}
+
+/* Estilos para o contêiner do input */
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+    /* Espaçamento inferior para a linha embaixo */
+}
+
+/* Estilo básico para o input */
+.purple-input {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid purple;
+    /* Linha embaixo */
+    outline: none;
+    font-size: 16px;
+    color: #4B0082;
+    background-color: transparent;
+    /* Remover o fundo branco */
+}
+
+/* Estilo do placeholder */
+.purple-input::placeholder {
+    color: #4B0082;
+    /* Cor do texto do placeholder */
+    opacity: 1.0;
+    /* Opacidade do texto do placeholder */
+}
+
+/* Efeito ao focar no input */
+.purple-input:focus {
+    border-bottom: 2px solid #4B0082;
+    /* Mudança de cor da linha embaixo ao focar */
+}
+
+.section-login {
+    width: 25vw;
+    height: auto;
+    border-radius: 20px;
+    margin: 0 auto;
+    /* Margens automáticas para centralizar */
+    padding: 10px;
+    /* Reduzido o padding para manter a proporção */
+}
+
+.btn-login {
+    background-color: #4B0082;
+    color: #FFFFFF;
+    border-radius: 40px;
+    padding: 15px;
+    border: none;
+}
+
+.link-criar-conta {
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.container-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link-criar-conta {
+    margin-top: 10px;
+    /* Ajuste a margem superior para descer um pouco o link */
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.rodape-pagina {
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    background-color: #FFFFFF;
+    color: #4B0082;
+    text-align: center;
+    margin-top: 200px;
+}
+
+/* Estilos básicos */
+
+/* Adicionando media query para dispositivos com largura máxima de 768px (tablet e dispositivos móveis) */
+@media only screen and (max-width: 768px) {
+    .section-login {
+        width: 80%;
+        /* Reduzindo a largura para se adaptar melhor a telas menores */
+    }
+
+    .purple-input {
+        width: 100%;
+        /* Fazendo o input ocupar toda a largura da tela */
+    }
+
+    .link-criar-conta {
+        font-size: 20px;
+        /* Reduzindo o tamanho da fonte do link para telas menores */
+    }
+
+    .container-links {
+        margin-top: 10px;
+        /* Reduzindo a margem superior entre o link e os demais elementos */
+    }
+}
+
+/* Adicionando media query para dispositivos com largura máxima de 480px (smartphones) */
+@media only screen and (max-width: 480px) {
+    .section-login {
+        width: 90%;
+        /* Ajustando ainda mais a largura para telas menores */
+    }
+
+    .titulo-login {
+        font-size: 24px;
+        /* Reduzindo o tamanho do título para telas muito pequenas */
+    }
+
+    .purple-input {
+        font-size: 14px;
+        /* Reduzindo o tamanho da fonte do input para telas muito pequenas */
+    }
+
+    .btn-login {
+        font-size: 12px;
+        /* Reduzindo o tamanho do texto do botão para telas muito pequenas */
+        padding: 10px;
+        /* Reduzindo o padding do botão para telas muito pequenas */
+    }
+
+    .link-criar-conta {
+        font-size: 10px;
+        /* Reduzindo ainda mais o tamanho da fonte do link para telas muito pequenas */
+    }
+}
