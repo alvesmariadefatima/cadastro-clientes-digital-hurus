@@ -2,98 +2,99 @@
 
 body {
     background-color: #4B0082;
+    font-family: "Roboto", sans-serif;
 }
 
 .container-logotipo {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .titulo-cadastro {
-    font-family: "Roboto", sans-serif;
     color: #ffffff;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .section-cadastro {
     background-color: #D9D9D9;
-    width: 25vw;
+    width: 60%;
+    max-width: 400px;
     height: auto;
     border-radius: 20px;
     margin: 0 auto;
-    /* Margens automáticas para centralizar */
-    padding: 10px;
-    /* Reduzido o padding para manter a proporção */
+    padding: 20px;
 }
 
-/* Estilos para o contêiner do input */
-    .input-container {
-        position: relative;
-        margin-bottom: 20px;
-        /* Espaçamento inferior para a linha embaixo */
-    }
+.input-container {
+    margin-bottom: 20px;
+}
 
-    /* Estilo básico para o input */
-    .purple-input {
-        width: 90%;
-        padding: 10px;
-        border: none;
-        border-bottom: 2px solid purple;
-        /* Linha embaixo */
-        outline: none;
-        font-size: 16px;
-        color: #4B0082;
-        background-color: transparent;
-        /* Remover o fundo branco */
-    }
+.purple-input {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid purple;
+    outline: none;
+    font-size: 16px;
+    color: #4B0082;
+    background-color: transparent;
+}
 
-    /* Estilo do placeholder */
-    .purple-input::placeholder {
-        color: #4B0082;
-        /* Cor do texto do placeholder */
-        opacity: 1.0;
-        /* Opacidade do texto do placeholder */
-    }
+.purple-input::placeholder {
+    color: #4B0082;
+    opacity: 1.0;
+}
 
-    /* Efeito ao focar no input */
-    .purple-input:focus {
-        border-bottom: 2px solid #4B0082;
-        /* Mudança de cor da linha embaixo ao focar */
-    }
+.purple-input:focus {
+    border-bottom: 2px solid #4B0082;
+}
 
-    .txt-informacoes-pessoais {
-        font-family: "Roboto", sans-serif;
-        color: #4B0082;
-        text-align: center;
-    }
+.txt-informacoes-pessoais,
+.txt-contato {
+    color: #4B0082;
+    text-align: center;
+}
 
-    .txt-contato {
-        font-family: "Roboto", sans-serif;
-        color: #4B0082;
-        text-align: center;
-    }
+.purple-input-data-nascimento {
+    width: 40%;
+    text-align: center;
+}
 
-    .btn-cadastrar {
-        font-family: "Roboto", sans-serif;
-        background-color: red;
-        color: #ffffff;
-        border: none;
-        margin-top: 20px;
-        padding: 10px;
-        border-radius: 20px;
-    }
+.btn-cadastrar {
+    background-color: #008000;
+    color: #ffffff;
+    border: none;
+    margin-top: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 30px; /* Aumento do padding */
+}
 
-    .btn-voltar {
-        font-family: "Roboto", sans-serif;
-        background-color: #008000;
-        margin-top: 20px;
-        color: #ffffff;
-        border-radius: 20px;
-        padding: 10px;
-        text-decoration: none;
-    }
+.container-buttons {
+    display: flex; /* Adicionando display flex */
+    justify-content: center; /* Centralizando os botões na horizontal */
+    margin-top: 30px;
+    padding: 20px;
+}
 
-    .container-buttons {
-        text-align: center;
-        margin-top: 30px;
-        padding: 20px;
+.label-genero, .label-data-nascimento {
+    font-family: "Roboto", sans-serif;
+    color: #4B0082;
+    padding: 10px;
+}
+
+/* Media queries para tornar a página responsiva */
+@media only screen and (max-width: 768px) {
+    .section-cadastro {
+        width: 90%; /* Alterado para uma porcentagem */
+        max-width: 400px; /* Adicionado um máximo para garantir que não fique muito largo em telas maiores */
+        padding: 10px; /* Ajuste do padding para melhorar o layout em dispositivos menores */
     }
+}
+
+.purple-input {
+    font-size: 14px;
+}
