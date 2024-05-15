@@ -1,7 +1,7 @@
 <?php
 $servidor = "localhost";
-$usuario = "programador";
-$senha = "senha";
+$usuario = "root";
+$senha = "";
 $dbname = "crud_clientes_digital_hurus";
 
 $conexao = mysqli_connect($servidor, $usuario, $senha, $dbname);
