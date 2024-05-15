@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #4B0082;
+    margin: 0;
+    padding: 0;
+}
+
+.txt-cadastro-efetuado {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.container-logotipo {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.txt-aviso {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.link-redirecionamento {
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+/* Media queries para tornar a página responsiva */
+@media only screen and (max-width: 600px) {
+    .container-logotipo {
+        margin-bottom: 10px;
+    }
+    
+    .txt-cadastro-efetuado {
+        font-size: 16px;
+    }
+
+    .txt-aviso {
+        font-size: 16px;
+    }
+
+    .link-redirecionamento {
+        font-size: 16px;
+    }
+}
